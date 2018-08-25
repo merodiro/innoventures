@@ -14,7 +14,7 @@ const Icon = styled.i`
 const Copyrights = styled.div`
   background: var(--primary);
   color: var(--light);
-  padding: .5em 0;
+  padding: 0.5em 0;
 `
 
 const Footer = () => (
