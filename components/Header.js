@@ -26,7 +26,6 @@ const MyCarouselItem = styled(CarouselItem)`
   overflow: hidden;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
   &.active {
     display: flex;
   }
@@ -39,6 +38,10 @@ const DisplayHeading = styled.h1`
   color: var(--light);
   font-size: 2.3em;
   margin-bottom: 1em;
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 1.5em;
+  }
 `
 const IconButton = styled.button`
   background: transparent;
@@ -58,7 +61,7 @@ class Header extends Component {
           <DisplayHeading>
             We help you turn crazy ideas into real companies.
           </DisplayHeading>
-          <a href="#" className="text-uppercase btn btn-primary btn-lg">
+          <a href="#" className="d-block d-md-inline text-uppercase btn btn-primary btn-lg">
             Apply Now
           </a>
         </Container>
