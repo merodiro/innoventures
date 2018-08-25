@@ -18,6 +18,11 @@ export default class MyDocument extends Document {
           <title>Innoventures</title>
           <link rel="stylesheet" href="/_next/static/style.css" />
           <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+          />
+          >
+          <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           />

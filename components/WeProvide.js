@@ -35,10 +35,12 @@ const Icon = styled.i`
   color: ${props => props.color};
   border: 2px solid ${props => props.color};
   border-radius: 50%;
-  line-height: 58px;
   transition: all 0.9s ease-in-out;
   height: 60px;
   width: 60px;
+  &&& {
+    line-height: 55px;
+  }
 `
 
 const Feature = styled.div`
