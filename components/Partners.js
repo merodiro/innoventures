@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Col, Row } from 'reactstrap'
+import { Container } from 'reactstrap'
 import styled from 'styled-components'
 
 import Heading from './ui/Heading'

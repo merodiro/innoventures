@@ -54,7 +54,7 @@ const tabs = [
   },
 ]
 
-export class Consultancy extends Component {
+export class Tabs extends Component {
   state = {
     activeTab: 'Strategy',
   }
@@ -69,7 +69,7 @@ export class Consultancy extends Component {
   render() {
     return (
       <Section className="bg-light text-dark">
-        <Nav tabs>
+        <Nav tabs className="flex-column flex-lg-row text-center">
           {tabs.map(tab => (
             <NavItem key={tab.title}>
               <Tab
@@ -97,4 +97,4 @@ export class Consultancy extends Component {
   }
 }
 
-export default Consultancy
+export default Tabs

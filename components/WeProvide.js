@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'reactstrap'
 import styled from 'styled-components'
 
 import Heading from './ui/Heading'
-import { Consultancy } from './Consultancy'
+import Tabs from './Tabs'
 import icons from '../static/img/icons.png'
 // import circuit from '../static/img/circuit-board.svg'
 
@@ -76,7 +76,7 @@ const WeProvide = () => {
             </Row>
           </Feature>
         ))}
-        <Consultancy />
+        <Tabs />
       </Container>
     </Section>
   )
