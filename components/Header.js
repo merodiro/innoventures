@@ -61,7 +61,10 @@ class Header extends Component {
           <DisplayHeading>
             We help you turn crazy ideas into real companies.
           </DisplayHeading>
-          <a href="#" className="d-block d-md-inline text-uppercase btn btn-primary btn-lg">
+          <a
+            href="#"
+            className="d-block d-md-inline text-uppercase btn btn-primary btn-lg"
+          >
             Apply Now
           </a>
         </Container>

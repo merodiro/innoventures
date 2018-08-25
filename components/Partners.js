@@ -39,7 +39,11 @@ export class Partners extends Component {
           <div>
             {partnersData.map(partner => (
               <a href="#" key={partner.name}>
-                <img className="d-block d-md-inline-block m-auto" src={partner.image} alt={partner.name} />
+                <img
+                  className="d-block d-md-inline-block m-auto"
+                  src={partner.image}
+                  alt={partner.name}
+                />
               </a>
             ))}
           </div>
