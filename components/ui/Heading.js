@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 const Heading = styled.h2`
   text-align: center;
-  padding-top: 2em;
-  margin-bottom: 2em;
+  /* padding-top: 2em; */
+  /* margin-bottom: 1em; */
+  margin: 1em 0;
   :after {
     content: '';
     display: block;

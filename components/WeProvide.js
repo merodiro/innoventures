@@ -1,8 +1,11 @@
 import React from 'react'
 import { Container, Col, Row } from 'reactstrap'
 import styled from 'styled-components'
+
 import Heading from './ui/Heading'
 import { Consultancy } from './Consultancy'
+import icons from '../static/img/icons.png'
+// import circuit from '../static/img/circuit-board.svg'
 
 const features = [
   {
@@ -46,14 +49,11 @@ const Feature = styled.div`
   padding-bottom: 3em;
 `
 
-import icons from '../static/img/icons.png'
-// import circuit from '../static/img/circuit-board.svg'
-
 const Section = styled.div`
   padding: 3em 0;
   background-color: var(--dark);
   background-image: url(${icons});
-  `
+`
 
 const WeProvide = () => {
   return (

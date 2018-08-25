@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import WeBelieveIn from '../components/WeBelieveIn'
 import WeProvide from '../components/WeProvide'
 import Info from '../components/Info'
+import { Partners } from '../components/Partners'
 
 export default () => {
   return (
@@ -15,6 +16,7 @@ export default () => {
       <WeBelieveIn />
       <WeProvide />
       <Info />
+      <Partners />
     </>
   )
 }
