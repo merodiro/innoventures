@@ -1,0 +1,8 @@
+# Project dependencies
+.next
+node_modules
+yarn-error.log
+
+# Build directory
+out
+.DS_Store
