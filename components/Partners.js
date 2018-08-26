@@ -19,7 +19,7 @@ const Section = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .1;
+    opacity: 0.1;
     z-index: -1;
     background-image: url(${glamorous});
   }

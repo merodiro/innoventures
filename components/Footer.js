@@ -19,7 +19,7 @@ const Section = styled.footer`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .4;
+    opacity: 0.4;
     z-index: 0;
     background-image: url(${circuit});
   }
