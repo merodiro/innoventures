@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container, Col, Row } from 'reactstrap'
-
 import styled from 'styled-components'
+
 import Heading from './ui/Heading'
+import glamorous from '../static/img/glamorous.svg'
 
 const features = [
   {
@@ -37,9 +38,25 @@ const Icon = styled.i`
   margin: 0.5em 0;
 `
 
-const WeBelieveIn = () => {
-  return (
-    <Container className="mb-5">
+const Section = styled.div`
+  position: relative;
+  padding: 2em 0;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .1;
+    background-image: url(${glamorous});
+    z-index: -1;
+  }
+`
+
+const WeBelieveIn = () => (
+  <Section>
+    <Container>
       <Heading dark>We Believe In</Heading>
       <Row>
         {features.map(feature => (
@@ -53,7 +70,7 @@ const WeBelieveIn = () => {
         ))}
       </Row>
     </Container>
-  )
-}
+  </Section>
+)
 
 export default WeBelieveIn

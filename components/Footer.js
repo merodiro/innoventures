@@ -2,10 +2,27 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import styled from 'styled-components'
 
+import circuit from '../static/img/circuit-board.svg'
+
 const Section = styled.footer`
-  background: var(--dark);
   padding: 3em 0;
+  position: relative;
   color: var(--light);
+  background-color: var(--dark);
+  * {
+    z-index: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: 0;
+    background-image: url(${circuit});
+  }
 `
 const Icon = styled.i`
   color: ${props => props.color};
