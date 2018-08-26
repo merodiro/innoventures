@@ -14,6 +14,13 @@ import {
 } from 'reactstrap'
 
 import Logo from '../static/img/brand.png'
+import styled from 'styled-components'
+
+const Image = styled.img.attrs({
+  className: 'img-fluid',
+})`
+  max-height: 3em;
+`
 
 class MyNavbar extends React.Component {
   constructor(props) {
@@ -33,7 +40,7 @@ class MyNavbar extends React.Component {
     return (
       <Navbar className="text-center" color="dark" dark expand="md" fixed="top">
         <NavbarBrand href="/">
-          <img src={Logo} className="img-fluid" style={{ maxHeight: '3em' }} />
+          <Image src={Logo} />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
